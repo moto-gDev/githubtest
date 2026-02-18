@@ -1,58 +1,12 @@
-# NebulaSync
+﻿# 譏滄峇蜷梧悄
 
-NebulaSync is a fictional cross-platform CLI tool that keeps project files synchronized across local folders, NAS storage, and cloud mirrors with deterministic conflict handling.
+譏滄峇蜷梧悄・・ebulaSync・峨・縲√Ο繝ｼ繧ｫ繝ｫ繝輔か繝ｫ繝繝ｻNAS繝ｻ繧ｯ繝ｩ繧ｦ繝峨Α繝ｩ繝ｼ髢薙〒繝励Ο繧ｸ繧ｧ繧ｯ繝医ヵ繧｡繧､繝ｫ繧貞酔譛溘☆繧九∵楔遨ｺ縺ｮ繧ｯ繝ｭ繧ｹ繝励Λ繝・ヨ繝輔か繝ｼ繝 CLI 繝・・繝ｫ縺ｧ縺吶らｫｶ蜷医′逋ｺ逕溘＠縺溷ｴ蜷医ｂ縲∵ｱｺ螳夂噪縺ｪ繝ｫ繝ｼ繝ｫ縺ｧ蜃ｦ逅・〒縺阪∪縺吶・
+## 荳ｻ縺ｪ讖溯・
+- 繧ｳ繝ｳ繝・Φ繝・ワ繝・す繝･繧剃ｽｿ縺｣縺滄ｫ倬溘↑蜿梧婿蜷大酔譛・- 蜀榊ｮ溯｡悟庄閭ｽ縺ｪ隗｣豎ｺ繝ｭ繧ｰ莉倥″縺ｮ遶ｶ蜷域､懷・
+- `.gitignore` 莠呈鋤縺ｮ髯､螟悶Ν繝ｼ繝ｫ
+- 螟画峩驕ｩ逕ｨ蜑阪↓螳牙・縺ｫ遒ｺ隱阪〒縺阪ｋ繝峨Λ繧､繝ｩ繝ｳ繝｢繝ｼ繝・- 蟾ｮ縺玲崛縺亥庄閭ｽ縺ｪ繧ｹ繝医Ξ繝ｼ繧ｸ繧｢繝繝励ち・・ocal縲ヾ3 莠呈鋤縲仝ebDAV・・
+## 繧医￥菴ｿ縺・さ繝槭Φ繝・- `nebulasync init` : 譌｢螳壹・險ｭ螳壹→迥ｶ諷九ョ繧｣繝ｬ繧ｯ繝医Μ繧堤函謌・- `nebulasync sync` : 迴ｾ蝨ｨ縺ｮ繝励Ο繝輔ぃ繧､繝ｫ縺ｫ蝓ｺ縺･縺・※蜷梧悄繧貞ｮ溯｡・- `nebulasync status` : 譛ｪ蜷梧悄縺ｮ螟画峩縺ｨ蟾ｮ蛻・し繝槭Μ繧定｡ｨ遉ｺ
+- `nebulasync doctor` : 險ｭ螳壹・隱崎ｨｼ諠・ｱ繝ｻ繧｢繝繝励ち迥ｶ諷九ｒ讀懆ｨｼ
 
-## Features
-- Fast bidirectional sync using content hashes
-- Conflict detection with replayable resolution logs
-- Ignore rules compatible with `.gitignore`
-- Dry-run mode for safe preview before applying changes
-- Pluggable storage adapters (Local, S3-compatible, WebDAV)
-
-## Quick Start
-```bash
-# install (fictional)
-pkgx install nebulasync
-
-# initialize a sync profile in current directory
-nebulasync init
-
-# preview operations
-nebulasync sync --dry-run
-
-# execute sync
-nebulasync sync
-```
-
-## Example Configuration
-Create `.nebulasync.toml` in your project root:
-
-```toml
-[project]
-name = "demo-workspace"
-
-[sources]
-primary = "./"
-mirror = "s3://acme-backup/demo-workspace"
-
-[rules]
-ignore = [".git/", "node_modules/", "*.tmp"]
-
-[conflict]
-strategy = "latest-write-wins"
-log_path = ".nebulasync/conflicts.log"
-```
-
-## Common Commands
-- `nebulasync init` : Generate default config and state directory
-- `nebulasync sync` : Run synchronization based on current profile
-- `nebulasync status` : Show pending changes and drift summary
-- `nebulasync doctor` : Validate config, credentials, and adapter health
-
-## Roadmap
-- End-to-end encryption for remote targets
-- Real-time watch mode with event batching
-- Team policy bundles for consistent conflict strategies
-
-## License
-This is a fictional project README for testing and demonstration purposes.
+## 繝ｩ繧､繧ｻ繝ｳ繧ｹ
+縺薙・ README 縺ｯ縲√ユ繧ｹ繝医♀繧医・繝・Δ逕ｨ縺ｮ譫ｶ遨ｺ繝励Ο繧ｸ繧ｧ繧ｯ繝亥髄縺代し繝ｳ繝励Ν縺ｧ縺吶・
